@@ -6,10 +6,41 @@
 }
 
 .point {
-  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
   backdrop-filter: blur(3px);
 }
 
 .dexter {
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
+
+.body {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(16, 42, 52, 0.4);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  backdrop-filter: blur(3px);
+}
+
+.body-work {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  background: rgba(16, 42, 52, 0.4);
+
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  backdrop-filter: blur(3px);
+}
+
+.work {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  background: rgba(255, 255, 255, 0.10);
+
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  backdrop-filter: blur(3px);
 }
