@@ -8,7 +8,13 @@ import project from "../../assets/img/projects.svg";
 import about from "../../assets/img/about.svg";
 import stack from "../../assets/img/stack.svg";
 import mail from "../../assets/img/mail.svg";
-
+import arrow from "../../assets/img/arrow-up-right.svg";
+import rcv from "../../assets/img/readcv.svg";
+import lkdn from "../../assets/img/linkedin.svg";
+import dbbl from "../../assets/img/dbbl.svg";
+import gthb from "../../assets/img/github.svg";
+import doc from "../../assets/img/doc.svg"
+;
 const Navbar = () => {
   const [isCopied, setIsCopied] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -134,47 +140,123 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="mt-2">
                   <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
-                    <Link to="mailto:drkannobeck@gmail.com">
+                    <Link 
+                      to="https://read.cv/beck/"
+                      target="_blank"
+                    >
+                    <span className="justify-between flex items-center">
                       <span className="flex space-x-2 items-center">
                         <img 
-                          src={about}
-                          alt="person icon"
+                          src={rcv}
+                          alt="Read.cv icon"
                         />
-                        <p>About</p>
-                        
+                        <p>read.cv</p>
+                        </span>
+                        <img 
+                          src={arrow}
+                          alt="arrow icon"
+                          className="mr-2"
+                        />
                       </span>
                     </Link>
                   </li>
 
                   <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
-                    <Link to="/stack">
-                      <span className="space-x-2 flex items-center">
+                    <Link 
+                    to="https://linkedin.com/in/kanno-beck/"
+                    target="_blank"
+                    >
+                      <span className="justify-between flex items-center">
+                        <span className="flex space-x-2 items-center">
                         <img 
-                          src={stack}
-                          alt="laptop icon"
+                          src={lkdn}
+                          alt="linkedin icon"
                         />
-                        <p>Stack</p>
-                        
+                        <p>LinkedIn</p>
+                        </span>
+                        <img 
+                          src={arrow}
+                          alt="arrow icon"
+                          className="mr-2"
+                        />
+                      </span>
+                    </Link>
+                  </li>
+
+
+                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                    <Link 
+                    to="https://dribbble.com/bekkr/"
+                    target="_blank"
+                    >
+                      <span className="justify-between flex items-center">
+                        <span className="flex space-x-2 items-center">
+                        <img 
+                          src={dbbl}
+                          alt="dribbble icon"
+                        />
+                        <p>Dribbble</p>
+                        </span>
+                        <img 
+                          src={arrow}
+                          alt="arrow icon"
+                          className="mr-2"
+                        />
+                      </span>
+                    </Link>
+                  </li>   
+
+                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                    <Link 
+                    to="https://github.com/altbeck/"
+                    target="_blank"
+                    >
+                      <span className="justify-between flex items-center">
+                        <span className="flex space-x-2 items-center">
+                        <img 
+                          src={gthb}
+                          alt="github icon"
+                        />
+                        <p>GitHub</p>
+                        </span>
+                        <img 
+                          src={arrow}
+                          alt="arrow icon"
+                          className="mr-2"
+                        />
+                      </span>
+                    </Link>
+                  </li>
+                </div>
+
+                <div
+                  className="my-4"
+                >
+                  <li className="py-2.5 pl-3 rounded-lg bg-[#C6FE22] text-[#344054]">
+                    <Link 
+                    to="https://drive.google.com/drive/folders/1cjqR736qy4tTq27y3Uy9iVOpvLMQHvbx"
+                    target="_blank"
+                    >
+                      <span className="justify-between flex items-center">
+                        <span className="flex space-x-2 items-center">
+                        <img 
+                          src={doc}
+                          alt="document icon"
+                        />
+                        <p
+                          className="font-medium"
+                        >
+                          Download resume
+                        </p>
+                        </span>
                       </span>
                     </Link>
                   </li>
                 </div>
 
               </div>
-
-
-              <li className="py-2.5 pl-3 hover:rounded-md hover:bg-black">
-                <Link to="/projects">Projects</Link>
-              </li>
-              <li className="py-2.5 pl-2.5 hover:rounded-md hover:bg-black">
-                <Link to="/stack">Stack</Link>
-              </li>
-              <li className="py-2.5 pl-2.5 hover:rounded-md hover:bg-black">
-                <Link to="/contact">Contact</Link>
-              </li>
-              {/* Add other links here */}
             </ul>
           </div>
         )}
