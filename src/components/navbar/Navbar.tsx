@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-3 py-4 fixed w-full z-20 top-0 left-0 border-gray-600 ">
+    <nav className="font-body px-4 py-4 fixed w-full z-20 top-0 left-0 border-gray-600 ">
       <div className="flex container flex-wrap justify-between mx-auto">
         <div className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point">
           <Link 
@@ -57,6 +57,7 @@ const Navbar = () => {
         </div>
 
 
+        {/* NAV MENU */}
         {menuOpen && (
           <div className="absolute top-[90%] right-0 w-[70%] bg-regal-400 border border-sliteWhite-100 point m-3 text-white rounded-xl">
             <ul className="flex flex-col p-5">

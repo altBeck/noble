@@ -7,7 +7,7 @@ import pup from "../../assets/img/puplar.svg";
 const Header = () => {
   return (
     <div className="text-center">
-      <div className="work w-[68%] py-2.5 uppercase">
+      <div className="work w-[68%] bigPhone:w-[226px] py-2.5 uppercase">
         <p className="ml-4 flex items-center m-0 md:pb-0 space-x-2">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -29,7 +29,7 @@ const Header = () => {
           <p>web/app design</p>
           <p>design system</p>
           <p>product design</p>
-          <p>frontend development</p>
+          <p>web development</p>
         </div>
       </div>
         <div className="flex body-work mx-auto justify-center space-x-4 w-[45%] py-3 mt-3">

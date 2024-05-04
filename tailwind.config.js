@@ -23,6 +23,9 @@ export default {
           '100': "rgba(255, 255, 255, 0.20)",
         },
       },
+      screens: {
+        'bigPhone': "385px",
+      },
     },
   },
   plugins: [],
