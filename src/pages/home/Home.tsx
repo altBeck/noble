@@ -4,10 +4,10 @@ import { Navbar, Header } from "../../components";
 
 const Home = () => {
   return (
-    <main className="h-100dvh relative w-full flex flex-col bg-gradient-to-b from-regal-100 via-black-40% md:via-35% lg:via-25% xl:via-50% to-regal-200">
+    <main className="h-full relative w-full flex flex-col bg-gradient-to-b from-regal-100 via-black-40% md:via-35% lg:via-25% xl:via-50% to-regal-200">
 
       <section
-        className="flex flex-col bg-gradient-to-b md:p-3  from-regal-100 via-black-40% md:via-35% lg:via-25% xl:via-50% to-regal-200"
+        className="h-100dvh flex flex-col bg-gradient-to-b md:p-3  from-regal-100 via-black-40% md:via-35% lg:via-25% xl:via-50% to-regal-200"
       >
         <div className="fixed z-50">
           <Navbar />
