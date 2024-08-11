@@ -13,8 +13,9 @@ import rcv from "../../assets/img/readcv.svg";
 import lkdn from "../../assets/img/linkedin.svg";
 import dbbl from "../../assets/img/dbbl.svg";
 import gthb from "../../assets/img/github.svg";
-import doc from "../../assets/img/doc.svg"
-;
+import doc from "../../assets/img/doc.svg";
+import ideas from "../../assets/img/bulb.svg";
+
 const Navbar = () => {
   const [isCopied, setIsCopied] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,8 +34,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="font-body px-4 py-4 fixed w-full z-20 top-0 left-0 border-gray-600 ">
-      <div className="flex container flex-wrap justify-between mx-auto">
+    <nav className="font-body px-4 py-4 fixed w-full z-20 top-0 left-0">
+      <div className="flex container flex-wrap justify-between mx-auto md:border md:border-gray-600">
         <div className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point">
           <Link 
             to="/"
@@ -48,7 +49,7 @@ const Navbar = () => {
 
         <div 
           onClick={toggleMenu}
-          className="rounded-xl border border-regal-300 bg-regal-200 p-3  gap-2.5 point"
+          className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point"
         >
           <img 
             src={menuOpen ? close : menu}
@@ -59,7 +60,7 @@ const Navbar = () => {
 
         {/* NAV MENU */}
         {menuOpen && (
-          <div className="absolute top-[90%] right-0 w-[70%] bg-regal-400 border border-sliteWhite-100 point m-3 text-white rounded-xl">
+          <div className="absolute top-[90%] right-0 bg-regal-400 border border-sliteWhite-100 point m-3 text-white rounded-xl">
             <ul className="flex flex-col p-5">
 
             <div>
@@ -76,6 +77,19 @@ const Navbar = () => {
                         alt="person icon"
                       />
                       <p>About</p>
+                        
+                    </span>
+                  </Link>
+                </li>
+
+                <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                  <Link to="/ideas">
+                    <span className="space-x-2 flex items-center">
+                      <img 
+                        src={ideas}
+                        alt="bulb icon"
+                      />
+                      <p>Ideas</p>
                         
                     </span>
                   </Link>
@@ -120,7 +134,7 @@ const Navbar = () => {
                   <p className="text-[#aaa] text-sm font-light">WHERE TO FIND ME</p>
                 </div>
 
-                <div className="py-2.5 pl-3 rounded-lg bg-white">
+                <div className="py-2.5 px-2.5 rounded-lg bg-white">
 
                   <div
                     className={`font-body text-sm items-center flex flex-row space-x-2  cursor-pointer ${isCopied ? 'text-green-600' : 'text-[#344054]'}`}
@@ -142,7 +156,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="mt-2">
-                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                  <li className="py-2.5 pl-2.5 hover:rounded-lg hover:bg-black">
                     <Link 
                       to="https://read.cv/beck/"
                       target="_blank"
@@ -164,7 +178,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                  <li className="py-2.5 pl-2.5 hover:rounded-lg hover:bg-black">
                     <Link 
                     to="https://linkedin.com/in/kanno-beck/"
                     target="_blank"
@@ -187,7 +201,7 @@ const Navbar = () => {
                   </li>
 
 
-                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                  <li className="py-2.5 pl-2.5 hover:rounded-lg hover:bg-black">
                     <Link 
                     to="https://dribbble.com/bekkr/"
                     target="_blank"
@@ -209,7 +223,7 @@ const Navbar = () => {
                     </Link>
                   </li>   
 
-                  <li className="py-2.5 pl-3 hover:rounded-lg hover:bg-black">
+                  <li className="py-2.5 pl-2.5 hover:rounded-lg hover:bg-black">
                     <Link 
                     to="https://github.com/altbeck/"
                     target="_blank"
@@ -235,9 +249,9 @@ const Navbar = () => {
                 <div
                   className="my-4"
                 >
-                  <li className="py-2.5 pl-3 rounded-lg bg-[#C6FE22] text-[#344054]">
+                  <li className="py-2.5 px-2.5 rounded-lg bg-[#C6FE22] text-[#344054]">
                     <Link 
-                    to="https://drive.google.com/drive/folders/1cjqR736qy4tTq27y3Uy9iVOpvLMQHvbx"
+                    to="https://drive.google.com/file/d/1hRKMXlBzwAMaPTp5xisGXGLnPGM-uab1/view?usp=sharing"
                     target="_blank"
                     >
                       <span className="justify-between flex items-center">
@@ -249,7 +263,7 @@ const Navbar = () => {
                         <p
                           className="font-medium"
                         >
-                          Download resume
+                          View resume
                         </p>
                         </span>
                       </span>

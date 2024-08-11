@@ -24,46 +24,47 @@ const Header = () => {
         </h1>
       </div>
 
-      <div className="font-body uppercase font-semibold text-xl mx-auto mt-8 body p-5">
-        <div className="grid grid-cols-2 gap-4 text-base">
+      <div className="font-body uppercase mx-auto mt-8 body p-5">
+        <div className="grid font-medium grid-cols-2 gap-4 text-[15px]">
           <p>web/app design</p>
           <p>design system</p>
           <p>product design</p>
-          <p>web development</p>
+          <p>web dev</p>
         </div>
       </div>
-        <div className="flex body-work mx-auto justify-center space-x-4 w-[45%] py-3 mt-3">
-          <img
+      
+      
+      <div className="flex body-work mx-auto justify-center space-x-4 w-[45%] p-2.5 mt-3">
+        <img
           src={och}
           alt="OnlineCourseHost.Clogo"
           width={22}
           height={22}
-          />
-          
+        />
 
-          <img
+        <img
           src={pc}
           alt="Portal Check logo"
           width={22}
           height={22}
-          />
+        />
 
 
-          <img
+        <img
           src={brz}
           alt="Breeze logo"
           width={22}
           height={22}
-          />
+        />
           
 
-          <img
+        <img
           src={pup}
           alt="Puplar logo"
           width={22}
           height={22}
-          />
-        </div>
+        />
+      </div>
     </div>
   )
 }

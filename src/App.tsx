@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { About, Home, Stack, Projects } from './pages';
+import { About, Home, Stack, Projects, Ideas } from './pages';
 import './App.css'
 
 {/* 
@@ -20,6 +20,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/stack' element={<Stack />} />
+          <Route path='/ideas' element={<Ideas />} />
 
         </Routes>
 

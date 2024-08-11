@@ -25,6 +25,11 @@ export default {
       },
       screens: {
         'bigPhone': "385px",
+        'max-sm': {'max': '640px'},  // max-width for sm
+        'max-md': {'max': '768px'},  // max-width for md
+        'max-lg': {'max': '1024px'}, // max-width for lg
+        'max-xl': {'max': '1280px'}, // max-width for xl
+        'max-2xl': {'max': '1536px'},// max-width for 2xl
       },
     },
   },

@@ -8,8 +8,6 @@ import ide from "../../assets/img/ide.svg";
 import db from "../../assets/img/db.svg";
 import mail from "../../assets/img/mail.svg";
 import link from "../../assets/img/linkedin-icon.svg";
-import x from "../../assets/img/x-icon.svg";
-
 
 const About = () => {
   const [isCopied, setIsCopied] = useState(false);
@@ -70,7 +68,7 @@ const About = () => {
                 alt="design icon"
                 className="p-1.5 backDoor"
               />
-              <p>
+              <p className="font-medium">
                 Design System & User Experience
               </p>
             </div>
@@ -88,7 +86,7 @@ const About = () => {
                 alt="dashboard icon"
                 className="p-1.5 backDoor"
               />
-              <p>
+              <p className="font-medium">
                 Dashboard Designs
               </p>
             </div>
@@ -106,7 +104,7 @@ const About = () => {
                 alt="dashboard icon"
                 className="p-1 backDoor"
               />
-              <p>
+              <p className="font-medium">
                 Web Development
               </p>
             </div>
@@ -343,7 +341,7 @@ const About = () => {
       </div>
 
       <footer className="p-4 pt-2">
-        <p>©2024 Beck Kanno</p>
+        <p className="pb-10">©2024 Beck Kanno</p>
       </footer>
     </div>
   )
