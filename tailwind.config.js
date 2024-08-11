@@ -23,6 +23,9 @@ export default {
           '100': "rgba(255, 255, 255, 0.20)",
         },
       },
+      height: {
+        '100dvh': '100dvh',
+      },
       screens: {
         'bigPhone': "385px",
         'max-sm': {'max': '640px'},  // max-width for sm
