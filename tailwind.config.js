@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         'body': ['"Inter"', 'system-ui'],
         'display': ['"Bebas Neue"', 'system-ui'],
+        'nav': ['"Figtree"', 'system-ui'],
       },
       colors: {
         regal: {
@@ -33,6 +34,13 @@ export default {
         'max-lg': {'max': '1024px'}, // max-width for lg
         'max-xl': {'max': '1280px'}, // max-width for xl
         'max-2xl': {'max': '1536px'},// max-width for 2xl
+      },
+      transitionDuration: {
+        '300': '300ms',
+        '200': '200ms',
+      },
+      transitionTimingFunction: {
+        'ease': 'ease',
       },
     },
   },

@@ -35,8 +35,61 @@ const Navbar = () => {
 
   return (
     <nav className="font-body px-4 py-4 fixed w-full z-20 top-0 left-0">
-      <div className="flex container flex-wrap justify-between mx-auto md:border md:border-gray-600">
-        <div className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point">
+
+      {/* DESKTOP VIEW */}
+      <div className="flex container flex-wrap justify-between mx-auto">
+        
+        <div
+          className="hidden md:flex justify-between p-2.5 w-full bg-[#ffffff1a] point rounded-[10px] drop-shadow-md"
+        >
+          <p className="pl-2 flex items-center m-0 md:pb-0 space-x-2">
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            <span className="font-medium !text-white text-sm uppercase">Available for work
+            </span>
+          </p>
+
+          <div
+          className="list-none flex flex-row align-middle justify-center space-x-2"
+          >
+            <Link 
+              to="/about"
+              className="px-4 py-2 hover:rounded-[4px] font-nav font-semibold m-auto hover:bg-[#fff2] hover:transition-colors hover:duration-300 hover:ease-out"
+            >
+              about 
+            </Link>
+
+            <Link 
+              to="/work"
+              className="px-4 py-2 hover:rounded-[4px] font-nav font-semibold m-auto hover:bg-[#fff2] hover:transition-colors hover:duration-300 hover:ease-out"
+            >
+              work 
+            </Link>
+
+            <Link 
+              to="/site-info"
+              className="px-4 py-2 hover:rounded-[4px] font-nav font-semibold m-auto hover:bg-[#fff2] hover:transition-colors hover:duration-300 hover:ease-out"
+            >
+              site info 
+            </Link>
+
+          </div>
+
+          <button
+            className="p-2 px-6 rounded-md font-semibold font-nav text-base bg-white text-black"
+          >
+            <Link 
+              to="https://drive.google.com/file/d/1hRKMXlBzwAMaPTp5xisGXGLnPGM-uab1/view?usp=sharing"
+              target="_blank">
+              View my resume
+            </Link>
+          </button>
+        </div>
+
+
+        <div className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point md:hidden">
           <Link 
             to="/"
             >
@@ -49,7 +102,7 @@ const Navbar = () => {
 
         <div 
           onClick={toggleMenu}
-          className="rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point"
+          className="md:hidden rounded-xl border border-regal-300 bg-regal-200 p-3 gap-2.5 point"
         >
           <img 
             src={menuOpen ? close : menu}
@@ -127,7 +180,6 @@ const Navbar = () => {
                   </span>
                 </Link>
               </li>
-
 
               <div>
                 <div className="mt-4 py-2.5 pl-3 hover:rounded-lg hover:bg-black">
